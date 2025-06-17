@@ -21,8 +21,8 @@ const ManageBookingsPage = lazy(() => import("./pages/ManageBookingsPage"));
 const SupportPage = lazy(() => import("./pages/SupportPage"));
 const AdminPage = lazy(() => import("./pages/AdminPage"));
 const OffersPage = lazy(() => import("./pages/OffersPage"));
-const SignInPage = lazy(() => import("./pages/Signin"));
-const ProfilePage = lazy(() => import("./pages/ProfilePage"));
+// const SignInPage = lazy(() => import("./pages/Signin"));
+// const ProfilePage = lazy(() => import("./pages/ProfilePage"));
 const Tourism = lazy(() => import("./pages/Tourism"));
 const AboutUsPage = lazy(() => import("./pages/AboutUsPage"));
 const Hero = lazy(() => import("./components/home/Hero"));
@@ -65,13 +65,13 @@ const App = () => (
                 <Route path="/" element={<TransitionedRoute element={<Index />} />} />
                 <Route path="/flights" element={<TransitionedRoute element={<FlightsPage />} />} />
                 <Route path="/login" element={<TransitionedRoute element={<LoginPage />} />} />
-                <Route path="/signin" element={<TransitionedRoute element={<SignInPage />} />} />
+                {/* <Route path="/signin" element={<TransitionedRoute element={<SignInPage />} />} /> */}
                 <Route path="/register" element={<TransitionedRoute element={<RegisterPage />} />} />
                 <Route path="/manage-bookings" element={<TransitionedRoute element={<ManageBookingsPage />} />} />
                 <Route path="/support" element={<TransitionedRoute element={<SupportPage />} />} />
                 <Route path="/admin" element={<TransitionedRoute element={<AdminPage />} />} />
                 <Route path="/offers" element={<TransitionedRoute element={<OffersPage />} />} />
-                <Route path="/profile" element={<TransitionedRoute element={<ProfilePage />} />} />
+                {/* <Route path="/profile" element={<TransitionedRoute element={<ProfilePage />} />} /> */}
                 <Route path="/destinations" element={<TransitionedRoute element={<Tourism />} />} />
                 <Route path="/about" element={<TransitionedRoute element={<AboutUsPage />} />} />
                 <Route path="/home" element={<TransitionedRoute element={<Hero />} />} />
